@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset=utf-8 />
-<title>Kompliment</title>
+  <meta charset=utf-8 />
+  <title>Kompliment</title>
 </head>
+
 <body>
   <div id="quote"></div>
   <script>
-    (function() {
+    (function () {
       var quotes = [
         {
           text: "Du ser smuk ud i dag!"
@@ -22,31 +24,35 @@
           text: 'Din mor er en henrivende kvinde!',
         },
         {
-          text:'Du er en virkelig god ven/veninde'
-        },
-          {
-          text:'Jeg er vild med din trøje – er den ny?'
-        },
-
-         {
-          text:'Man bliver så glad af at være sammen med dig!'
-        },
-         {
-          text:'Dit hår sidder virkelig pænt i dag!'
+          text: 'Du er en virkelig god ven/veninde'
         },
         {
-          text:' Hvor dufter du godt!'
+          text: 'Jeg er vild med din trøje – er den ny?'
         },
-          {
-          text:'Er du et mål? Fordi jeg vil gerne score dig!'
+
+        {
+          text: 'Man bliver så glad af at være sammen med dig!'
+        },
+        {
+          text: 'Dit hår sidder virkelig pænt i dag!'
+        },
+        {
+          text: ' Hvor dufter du godt!'
+        },
+        {
+          text: 'Er du et mål? Fordi jeg vil gerne score dig!'
+        },
+        {
+          text: 'Du er CSSen til min HTML!'
         },
 
 
       ];
       var quote = quotes[Math.floor(Math.random() * quotes.length)];
       document.getElementById("quote").innerHTML =
-        '<h1>' + quote.text + '</h1>' 
+        '<h1>' + quote.text + '</h1>'
     })();
   </script>
 </body>
+
 </html>
